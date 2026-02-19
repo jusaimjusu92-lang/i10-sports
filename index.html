@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i 10 Sports | Success is a Lifestyle</title>
+    <meta name="description"
+        content="Premium sports fashion and performance gear. Join the i 10 Sports movement. Success is not just a destination, it's a lifestyle.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="admin-mode-off"> <!-- Default admin mode off -->
+    <div id="admin-toggle" class="admin-badge">Admin Mode Off</div>
+    <nav id="nav-main">
+        <div class="container nav-content">
+            <div class="logo">i 10 <span class="text-gradient">SPORTS</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Collections</a></li>
+                <li><a href="#steeze">Weekly Steeze</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="logo reveal" style="margin-bottom: 2rem; font-size: 3rem;">i 10 <span
+                        class="text-gradient">SPORTS</span></div>
+                <h1 class="reveal">Success is a <span class="text-gradient">Lifestyle.</span></h1>
+                <p class="reveal">Experience the perfect blend of high-performance athletics and premium urban
+                    aesthetics. Designed for those who never stop moving.</p>
+                <div class="hero-btns reveal">
+                    <a href="#steeze" class="btn btn-primary">View Collection</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual"></div>
+    </header>
+
+    <section id="categories" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Browse <span class="text-gradient">Categories</span></h2>
+            </div>
+            <div class="category-grid">
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=1000"
+                        alt="Streetwear Collection">
+                    <div class="category-info">
+                        <h3>STREETWEAR</h3>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&q=80&w=1000"
+                        alt="Sneaker Collection">
+                    <div class="category-info">
+                        <h3>SNEAKERS</h3>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1000"
+                        alt="Performance Gear">
+                    <div class="category-info">
+                        <h3>PERFORMANCE</h3>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="steeze" class="section-padding">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <h2>Weekly <span class="text-gradient">Steeze</span></h2>
+                    <p style="color: var(--text-secondary); margin-top: 10px;">Our trending picks for this week.</p>
+                </div>
+                <a href="#" style="color: var(--accent-lime); text-decoration: none; font-weight: 600;">View All
+                    Products &rarr;</a>
+            </div>
+
+            <div class="admin-controls reveal">
+                <h3>Manage Products</h3>
+                <form id="add-product-form" class="add-product-form">
+                    <div class="form-group">
+                        <label>Product Name</label>
+                        <input type="text" id="p-name" placeholder="e.g. Elite Mesh Hoodie" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Price ($)</label>
+                        <input type="number" id="p-price" placeholder="e.g. 95" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Product Image</label>
+                        <input type="file" id="p-img" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </form>
+            </div>
+
+            <div class="product-grid" id="product-list">
+                <!-- Products will be dynamically rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="about" class="section-padding"
+        style="background: var(--surface-color); border-top: 1px solid var(--glass-border);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem;">
+                <div>
+                    <div class="logo" style="margin-bottom: 2rem;">i 10 <span class="text-gradient">SPORTS</span></div>
+                    <p style="color: var(--text-secondary); max-width: 400px;">Redefining the boundary between
+                        performance and style. We create gear for those who embody the hustle and the victory.</p>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1.5rem; text-transform: uppercase;">Contact Info</h5>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <span>PK Tower, Thootha, 679357</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 95623 89397</span>
+                    </div>
+                </div>
+                <div>
+                    <h5 style="margin-bottom: 1.5rem; text-transform: uppercase;">Follow Us</h5>
+                    <ul style="list-style: none; color: var(--text-secondary); line-height: 2;">
+                        <li>Instagram</li>
+                        <li>TikTok</li>
+                        <li>YouTube</li>
+                        <li>Twitter (X)</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--glass-border); text-align: center; color: var(--text-secondary); font-size: 0.9rem;">
+                &copy; 2026 i 10 SPORTS. All Rights Reserved. Success is a Lifestyle.
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
